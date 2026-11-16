@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DimHub — личная страница</title>
+<meta name="description" content="Личная страница Дмитрия: заметки, проекты, контакты.">
+<style>
+  :root { color-scheme: light dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #f5f6fa 0%, #dfe4ea 100%);
+    color: #2f3640;
+    padding: 24px;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: linear-gradient(160deg, #1e272e 0%, #2f3640 100%); color: #dcdde1; }
+    .card { background: rgba(255,255,255,.04) !important; border-color: rgba(255,255,255,.08) !important; }
+    a { color: #7bed9f !important; }
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+    background: rgba(255,255,255,.55);
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(0,0,0,.08);
+  }
+  h1 { font-size: 2rem; letter-spacing: -.02em; margin-bottom: 6px; }
+  .sub { opacity: .7; margin-bottom: 28px; }
+  p { line-height: 1.6; margin-bottom: 14px; }
+  .links { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  a {
+    color: #218c74;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: 8px 18px;
+    transition: opacity .15s;
+  }
+  a:hover { opacity: .7; }
+  footer { margin-top: 36px; font-size: .82rem; opacity: .5; }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>DimHub</h1>
+  <p class="sub">личная страница</p>
+  <p>Здесь когда-нибудь будут мои заметки, проекты и полезные ссылки.</p>
+  <p>Сейчас страница находится в разработке — загляните позже.</p>
+  <nav class="links">
+    <a href="mailto:hello@dimhub.ru">Написать мне</a>
+  </nav>
+  <footer>© 2026 dimhub.ru</footer>
+</main>
+</body>
+</html>
